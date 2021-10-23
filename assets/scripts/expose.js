@@ -56,7 +56,7 @@ function init() {
   function playSound() {
     horn_sound.play();
 
-    if(horn_name == "party-horn") {
+    if(horn_name == "party-horn" && horn_sound.volume > 0) {
       jsConfetti.addConfetti();
     }
   }
